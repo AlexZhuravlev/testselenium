@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainClass {
+public class Lesson41 {
     public static void main(String[] args) {
         System.setProperty("webdriver.gecko.driver", "/home/zhuravlev/IdeaProjects/testselenium/drivers/geckodriver");
         System.setProperty("webdriver.chrome.driver", "/home/zhuravlev/IdeaProjects/testselenium/drivers/chromedriver");
@@ -16,7 +16,6 @@ public class MainClass {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // implicitlyWait. Дефолтный таймаут, максимальное время для драйвера на поиск элемента.
                                                                             // Если найден раньше - действие выполнится сразу.
                                                                             // Если не найден - ошибка. Указывется один раз в начале и по умолчанию применяется ко всем поискам элементов
-
 
 
         driver.manage().window().maximize();
@@ -33,18 +32,7 @@ public class MainClass {
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
 
-
-
-
-
         driver.quit();
-
-
-
-
-
-
-
 
 
     }
