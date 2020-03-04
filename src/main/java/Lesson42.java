@@ -22,7 +22,7 @@ public class Lesson42 {
         WebElement searchField= driver.findElement(By.name("search"));
         WebElement searchBtn = driver.findElement(By.className("searchButton"));
         WebElement li = driver.findElement(By.id("ca-viewsource"));
-        WebElement input = driver.findElement(By.tagName("inout"));
+        WebElement input = driver.findElement(By.tagName("input"));
 
         WebElement elem = driver.findElement(By.cssSelector("#p-lang > div > ul > li.interlanguage-link.interwiki-bg > a"));
         WebElement history = driver.findElement(By.xpath("//a[contains(text(),'View history')]"));
