@@ -17,9 +17,26 @@ public class Lesson46 {
         driver.manage().window().setPosition(new Point(2000, 0));
         driver.manage().window().maximize();
 
+        driver.get("https://rozetka.com.ua");
+        driver.findElement(By.xpath("//div[@class='menu-outer js-rz-fat-menu']")).click();
+        driver.findElement(By.xpath("//a[text()=\"Ноутбуки\"]")).click();
+        driver.findElement(By.xpath("//label[@for=\"Acer\"]")).click();
+        driver.findElement(By.xpath("//span[@class=\"catalog-selection__remove-icon\"]")).click();
+        driver.findElement(By.xpath("//input[@name=\"search\"]")).sendKeys("Ноутбук Asus ROG Strix");
+        driver.findElement(By.xpath("//button[@class=\"button button_color_green button_size_medium search-form__submit\"]")).click();
+        driver.findElement(By.xpath("//span[text()=\"Ноутбуки\"][1]")).click();
+
+        System.out.println("finish");
 
 
-        driver.quit();
+
+
+
+
+
+
+
+//        driver.quit();
 
     }
 }
