@@ -22,7 +22,11 @@ public class Lesson49 {
         driver.manage().window().setPosition(new Point(2000, 0));
         driver.manage().window().maximize();
 
-        driver.get("");
+        driver.get("https://www.w3schools.com/html/html_tables.asp");
+
+        WebElement table = driver.findElement(By.xpath("//table[@id=\"customers\"]"));
+
+
 
 
 
